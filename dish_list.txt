@@ -1,0 +1,152 @@
+Hamburger
+Cheeseburger  
+Hot Dog  
+Fried Chicken  
+Barbecue Ribs  
+Buffalo Wings  
+Meatloaf  
+Chicken and Waffles  
+Turkey
+Pulled Pork Sandwich  
+Sloppy Joe  
+Chili
+Chicken Pot Pie  
+Philly Cheesesteak  
+Corn Dog  
+French Fries  
+Mashed Potatoes  
+Coleslaw  
+Baked Beans  
+Cornbread  
+Tater Tots  
+Potato Salad  
+Green Bean  
+Casserole  
+Cobb Salad  
+Caesar Salad  
+Waldorf Salad  
+Chef Salad  
+Macaroni Salad  
+Chicago Deep-Dish Pizza  
+New York-Style Pizza  
+Clam Chowder
+Gumbo   
+Jambalaya  
+Lobster Roll  
+Reuben Sandwich  
+Pastrami on Rye  
+Apple Pie  
+Pumpkin Pie  
+Pecan Pie  
+Brownies  
+Cheesecake (New York-style)  
+Banana Pudding  
+Ice Cream Sundae  
+Donuts  
+Root Beer  
+Milkshake  
+Iced Tea
+Lemonade  
+Coca-Cola
+Pepsi
+malai kofta
+aloo gobi
+rice pudding
+vegetable korma
+lamb korma
+saag paneer
+tamarind sauce
+chicken vindaloo
+butter chicken
+goat curry
+tikka masala
+lamb curry
+palak paneer
+garlic naan
+chicken korma
+rogan josh
+chicken biryani
+chicken makhani
+yogurt sauce
+basmati rice
+fish curry
+chickpea curry
+lamb vindaloo
+aloo tikki
+shrimp curry
+chili chicken
+masala dosa
+vegetable samosas
+shrimp vindaloo
+cheese naan
+chicken tikka
+lentil soup
+mango chutney
+sweet rice
+mixed grill
+yellow curry
+tiki masala
+mango lassi
+vegetable curry
+veggie korma
+chana masala
+shahi paneer
+gulab jamun
+bhindi masala
+plain naan
+chick pea
+channa masala
+mixed vegetable
+flat bread
+chicken breast
+lamb biryani
+dal makhani
+mutter paneer
+white meat
+vegetable samosa
+chick peas
+tomato soup
+tamarind chutney
+veggie samosa
+mint chutney
+coconut chutney
+vegetable pakora
+cream sauce
+cottage cheese
+chili sauce
+chicken wings
+paneer pakora
+vegetable pakoras
+chau chau
+pilau rice
+chickpea ceviche
+onion kulcha
+vegetable biryani
+potato filling
+ice cream
+peshwari naan
+lamb chops
+samosa chaat
+mango custard
+onion bhaji
+eggplant dish
+chicken biriyani
+meat dishes
+ras malai
+mattar paneer
+lemon rice
+white rice
+chai tea
+gobi manchurian
+matter paneer
+carrot halwa
+garbanzo beans
+mixed vegetables
+masala dosai
+iced tea
+yogurt drink
+brown rice
+salad bar
+free chai
+chutney bar
+bhel puri
