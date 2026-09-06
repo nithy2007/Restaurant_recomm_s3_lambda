@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top Restaurants</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("/static/bg.jpg"); /* same background as home */
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    .no-results {
+      color: #ffcccb;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>
+    Top Restaurants for "{{ selected_dish }}" <br>
+    <small>({{ selected_city }})</small>
+  </h1>
+
+  {% if recommendations and recommendations|length > 0 %}
+    <ul>
+      {% for restaurant in recommendations %}
+        <li>{{ loop.index }}. {{ restaurant }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="no-results">
+      Could not find restaurants that serve {{ selected_dish }} in {{ selected_city }}. Please try a different dish or city.
+    </p>
+  {% endif %}
+
+  <form action="restaurant_recommendation">
+    <button class="back-btn">⬅ Back to Home</button>
+  </form>
+
+</div>
+
+</body>
+</html>

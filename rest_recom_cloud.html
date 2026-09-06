@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Recommendation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("/static/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 400px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    label {
+      color: white;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    p {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Restaurant Recommendation</h1>
+
+  <form method="POST" action="get_recommendations">
+
+    <!-- City Dropdown -->
+    <label for="city">Select City:</label>
+    <select name="city" id="city" required>
+      <option value="" disabled selected>-- Select City --</option>
+      {% for c in city %}
+        <option value="{{ c }}">{{ c }}</option>
+      {% endfor %}
+    </select>
+
+    <!-- Dish Dropdown -->
+    <label for="dish">Select Dish:</label>
+    <select name="dish" id="dish_dropdown" required>
+      <option value="" disabled selected>-- Select Dish --</option>
+      {% for d in dish %}
+        <option value="{{ d }}">{{ d.capitalize() }}</option>
+      {% endfor %}
+    </select>
+
+    <!-- Display Selections -->
+    <p><strong>Selected city:</strong> <span id="selected_city">None</span></p>
+    <p><strong>Selected Dish:</strong> <span id="selected_dish">None</span></p>
+
+    <!-- Submit -->
+    <button type="submit">Get Recommendations</button>
+
+  </form>
+</div>
+
+<script>
+  const citySelect = document.getElementById("city");
+  const dishSelect = document.getElementById("dish_dropdown");
+  const selectedCityLabel = document.getElementById("selected_city");
+  const selectedDishLabel = document.getElementById("selected_dish");
+
+  function updateDisplay() {
+    selectedCityLabel.textContent = citySelect.value || "None";
+    selectedDishLabel.textContent = dishSelect.value || "None";
+  }
+
+  // Update selection displays on user change
+  citySelect.addEventListener("change", updateDisplay);
+  dishSelect.addEventListener("change", updateDisplay);
+
+  // Initialize display labels on DOM load
+  document.addEventListener("DOMContentLoaded", updateDisplay);
+</script>
+
+</body>
+</html>
